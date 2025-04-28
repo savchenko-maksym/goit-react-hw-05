@@ -32,7 +32,7 @@ const MovieDetailsPage = () => {
           alt={movie.original_title}
           className={s.poster}
         />
-        <div>
+        <div className={s.info}>
           <h3>{movie.original_title}</h3>
           <div>
             <p>

@@ -1,13 +1,20 @@
 .wrapper {
   margin-top: 20px;
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 20px;
+  /* align-items: flex-start; */
 }
 
 .poster {
-  max-width: 300px;
+  max-width: 250px;
+  width: 100%;
   height: auto;
   border-radius: 4px;
+}
+
+.info {
+  flex-shrink: 0;
 }
 
 .navList {
