@@ -1,0 +1,16 @@
+.list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 3px;
+  }
+}

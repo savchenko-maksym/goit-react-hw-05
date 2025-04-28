@@ -1,0 +1,9 @@
+.linkNotFound {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #6689fd;
+  margin-top: 10px;
+  display: inline-block;
+  color: white;
+}

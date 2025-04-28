@@ -1,0 +1,36 @@
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.poster {
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.navList {
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.navItem {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 3px;
+  }
+}
+
+.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 3px;
+}

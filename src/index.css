@@ -1,0 +1,57 @@
+/* 1. Базовый Reset + небольшая нормализация */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Убираем особенности шрифтов на разных устройствах */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(to bottom, #c9d6ff, #e2e2e2);
+  color: #111;
+}
+
+/* 3. Упрощаем работу с изображениями */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Формы и кнопки — убираем "лишнее" */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 5. Убираем стилизация ссылок по умолчанию */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 6. Простая стилизация списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 7. Центрирование контейнера */
+/* .container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+} */
