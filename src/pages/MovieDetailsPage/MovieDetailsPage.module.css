@@ -3,7 +3,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  /* align-items: flex-start; */
 }
 
 .poster {
@@ -42,12 +41,27 @@
   text-decoration-thickness: 3px;
 }
 
-/* @media (max-width: 768px) {
-  .poster {
-    max-width: 250px;
-  }
+.backBtn {
+  margin-top: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* расстояние между иконкой и текстом */
+  padding: 8px 16px;
+  background-color: #6689fd;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: text-decoration 0.3s ease;
+}
 
-  .info {
-    max-width: 250px;
-  }
-} */
+.backBtn:hover {
+  color: blue;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 3px;
+}
+.icon {
+  font-size: 1.2rem;
+}

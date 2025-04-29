@@ -1,12 +1,21 @@
-import { useEffect, useState } from "react";
-import { NavLink, Outlet, useParams } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import {
+  Link,
+  NavLink,
+  Outlet,
+  useLocation,
+  useParams,
+} from "react-router-dom";
 import { fetchMoviesById } from "../../services/api";
 import s from "./MovieDetailsPage.module.css";
 import clsx from "clsx";
+import { TiArrowBackOutline } from "react-icons/ti";
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState({});
+  const location = useLocation();
+  const goBackRef = useRef(location.state ?? "/");
 
   useEffect(() => {
     const getData = async () => {
@@ -26,6 +35,10 @@ const MovieDetailsPage = () => {
 
   return (
     <div>
+      <Link to={goBackRef.current} className={s.backBtn}>
+        <TiArrowBackOutline className={s.icon} />
+        Go back
+      </Link>
       <div className={s.wrapper}>
         <img
           src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}

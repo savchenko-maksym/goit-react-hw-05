@@ -3,6 +3,7 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .posterItem {
@@ -33,6 +34,7 @@
   .list {
     padding: 5px;
     gap: 6px;
+    justify-content: center;
   }
   .posterItem {
     max-width: 155px;

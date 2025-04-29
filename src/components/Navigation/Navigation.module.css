@@ -17,10 +17,17 @@
   font-size: 25px;
   font-weight: bold;
   color: whitesmoke;
+  &:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 3px;
+  }
 }
 
 .active {
-  color: blue;
+  /* color: blue; */
   text-decoration: underline;
   text-underline-offset: 5px;
   text-decoration-color: yellow;
