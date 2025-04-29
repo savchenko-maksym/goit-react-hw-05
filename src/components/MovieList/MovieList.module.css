@@ -1,11 +1,15 @@
 .list {
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.item {
+.posterItem {
+  max-width: 200px;
+}
+
+.itemLink {
   color: blue;
   &:hover {
     text-decoration: underline;
@@ -13,4 +17,14 @@
     text-decoration-color: yellow;
     text-decoration-thickness: 3px;
   }
+}
+
+.posterImg {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.posterText {
+  text-align: center;
 }

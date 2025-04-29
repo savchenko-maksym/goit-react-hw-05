@@ -6,9 +6,14 @@ const MovieList = ({ data }) => {
     <div>
       <ul className={s.list}>
         {data.map((item) => (
-          <li key={item.id}>
-            <Link className={s.item} to={item.id.toString()}>
-              {item.title}
+          <li key={item.id} className={s.posterItem}>
+            <Link className={s.itemLink} to={item.id.toString()}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
+                alt={item.title}
+                className={s.posterImg}
+              />
+              <p className={s.posterText}>{item.title}</p>
             </Link>
           </li>
         ))}
