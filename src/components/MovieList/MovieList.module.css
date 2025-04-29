@@ -20,11 +20,21 @@
 }
 
 .posterImg {
-  width: 200px;
+  width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
 .posterText {
   text-align: center;
+}
+
+@media (max-width: 390px) {
+  .list {
+    padding: 5px;
+    gap: 6px;
+  }
+  .posterItem {
+    max-width: 155px;
+  }
 }

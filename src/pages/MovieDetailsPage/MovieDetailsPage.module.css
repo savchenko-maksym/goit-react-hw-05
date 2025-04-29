@@ -1,7 +1,7 @@
 .wrapper {
   margin-top: 20px;
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 20px;
   /* align-items: flex-start; */
 }
@@ -41,3 +41,13 @@
   text-decoration-color: yellow;
   text-decoration-thickness: 3px;
 }
+
+/* @media (max-width: 768px) {
+  .poster {
+    max-width: 250px;
+  }
+
+  .info {
+    max-width: 250px;
+  }
+} */
