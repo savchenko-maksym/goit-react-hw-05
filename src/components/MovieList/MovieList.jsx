@@ -11,7 +11,7 @@ const MovieList = ({ data }) => {
             <Link
               state={location}
               className={s.itemLink}
-              to={item.id.toString()}
+              to={`/movies/${item.id}`}
             >
               <img
                 src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
