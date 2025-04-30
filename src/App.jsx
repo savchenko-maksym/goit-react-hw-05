@@ -20,10 +20,6 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/:movieId" element={<MovieDetailsPage />}>
-          <Route path="cast" element={<MovieCast />} />
-          <Route path="reviews" element={<MovieReviews />} />
-        </Route> */}
         <Route path="/movies" element={<MoviesPage />} />
         <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
           <Route path="cast" element={<MovieCast />} />

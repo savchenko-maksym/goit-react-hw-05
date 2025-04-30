@@ -9,13 +9,13 @@ import {
 import { fetchMoviesById } from "../../services/api";
 import s from "./MovieDetailsPage.module.css";
 import clsx from "clsx";
-import { TiArrowBackOutline } from "react-icons/ti";
+import { BiArrowBack } from "react-icons/bi";
 
 const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [movie, setMovie] = useState({});
   const location = useLocation();
-  const goBackRef = useRef(location.state?.from ?? "/");
+  const goBackRef = useRef(location.state ?? "/");
 
   useEffect(() => {
     const getData = async () => {
@@ -36,7 +36,7 @@ const MovieDetailsPage = () => {
   return (
     <div>
       <Link to={goBackRef.current} className={s.backBtn}>
-        <TiArrowBackOutline className={s.icon} />
+        <BiArrowBack className={s.icon} />
         Go back
       </Link>
       <div className={s.wrapper}>
